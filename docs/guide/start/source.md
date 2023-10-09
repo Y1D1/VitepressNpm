@@ -21,7 +21,7 @@ cargo build
 cargo run
 ``` 
 ### 推流
-- 使用[Gstreamer](https://gstreamer.freedesktop.org/download/) 或 [OBS]((https://obsproject.com/forum/threads/obs-studio-30-beta.168984/))推流 :
+- 使用[Gstreamer](https://gstreamer.freedesktop.org/download/) 或 [OBS](https://github.com/obsproject/obs-studio)推流 :
 ```sh 
 gst-launch-1.0 videotestsrc ! videoconvert ! vp8enc ! rtpvp8pay ! whipsink whip-endpoint="http://localhost:3000/whip/777"
 ``` 

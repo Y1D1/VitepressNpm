@@ -36,7 +36,7 @@ gst-launch-1.0 audiotestsrc ! audioconvert ! opusenc ! rtpopuspay ! whipsink whi
 docker run --name live777-client --rm --network host ghcr.io/binbat/live777-client:main  gst-launch-1.0 audiotestsrc ! audioconvert ! avenc_g722 ! rtpg722pay ! whipsink whip-endpoint="http://localhost:3000/whip/777
 ```
 :::
-- 或直接选用[Gstreamer](https://gstreamer.freedesktop.org/download/)或 [OBS]((https://obsproject.com/forum/threads/obs-studio-30-beta.168984/))推流 :
+- 或直接选用[Gstreamer](https://gstreamer.freedesktop.org/download/)或 [OBS](https://github.com/obsproject/obs-studio)推流 :
 > 注:  
 > 1. OBS Studio 需要**30或更高的版本**        
 > 2. OBS WHIP 协议目前仅能支持**H264**视频编码和**Opus**音频编码
